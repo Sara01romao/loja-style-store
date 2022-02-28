@@ -1,0 +1,46 @@
+
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.link {
+    color:var(--color1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size:1rem;
+}
+
+
+.link::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: var(--color2);
+    position: absolute;
+    bottom: -5px;
+    transition: width 0.8s ease-in-out;
+}
+
+
+
+.menu :global(.active),
+.link:hover,
+.link:hover::after{
+    width: 100%;
+    
+    
+}
