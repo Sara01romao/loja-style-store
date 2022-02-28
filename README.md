@@ -31,8 +31,8 @@ React JS
 # Planejamento do projeto
 
 - [x] Layout Figma 
-- [ ] Config arquivos
-- [ ] Configuração básica das rotas 
+- [x] Config arquivos
+- [x] Configuração básica das rotas 
 - [ ] Page Home
 - [ ] Componente Header
 - [ ] Page Produtos
