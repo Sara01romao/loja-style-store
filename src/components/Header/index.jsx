@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import logo from '../../assets/logo.svg'
+import logo from '../../img/logo.svg'
 
 
 import styles from './styles.module.css';
@@ -13,7 +13,6 @@ function Header() {
       <Link to="/">
         <img src={logo} alt="Logo Hoti e Fruti" />
       </Link>
-     
       <ul>
         <li>
           <NavLink to="/" end className={styles.link}>Home</NavLink>
