@@ -80,8 +80,30 @@ header nav ul a:hover{
 .cartClose{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
+    border: 1px solid red;
+    border-bottom: 2px solid #6f6f6f62;
+    
 }
+
+.cartClose h4{
+    color: #858585;
+}
+
+.cartClose button{
+    border: none;
+    width: 35px;
+    height: 35px;
+    opacity: 0.9;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.cartClose button:hover{
+    opacity: 1;
+}
+
 
 .itemCartMenu{
     display: flex;
