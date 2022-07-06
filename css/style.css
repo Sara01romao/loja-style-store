@@ -58,12 +58,17 @@ header nav ul a:hover{
 
 /*CartMenu*/
 .cartMenu{
+    display: none;
     background-color: #6f6f6f2c;
     width: 100vw;
     height: 100vh;
     position: absolute;
-    top: 0;
+    top: 0;  
+    overflow: hidden;
+}
 
+.cartMenu.open{
+    display: block;
 }
 
 
@@ -74,6 +79,7 @@ header nav ul a:hover{
    position: absolute;
    right: 0;
    top: 0;
+   border: 1px solid red;
    
 }
 
