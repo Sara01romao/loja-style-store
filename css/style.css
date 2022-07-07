@@ -77,10 +77,17 @@ header nav ul a:hover{
    height: 100vh;
    width: 300px;
    position: absolute;
-   right: 0;
+   right: 0px;
+   transform: translateX(300px);
    top: 0;
    border: 1px solid red;
+   transition: 0.8s ease;
    
+   
+}
+
+.cartMenu.open .containerCartMenu{
+    transform: initial;
 }
 
 .cartClose{
