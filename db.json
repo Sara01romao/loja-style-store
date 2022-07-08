@@ -1,0 +1,63 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "name": "Alface",
+      "price": 1.99,
+      "quatidade": "uni",
+      "categorie": "verdura"
+    },
+    {
+      "id": 1,
+      "name": "Tomate",
+      "price": 2.5,
+      "quatidade": "Kg",
+      "categorie": "legume"
+    },
+
+    {
+      "id": 1,
+      "name": "Almerão",
+      "price": 3,
+      "quatidade": "uni",
+      "categorie": "verdura"
+    },
+    {
+      "id": 1,
+      "name": "Batata",
+      "price": 3.5,
+      "quatidade": "kg",
+      "categorie": "legume"
+    },
+
+    {
+      "id": 1,
+      "name": "Morango",
+      "price": 5,
+      "quatidade": "Kg",
+      "categorie": "fruta"
+    },
+    {
+      "id": 1,
+      "name": "abacaxi",
+      "price": 4,
+      "quatidade": "uni",
+      "categorie": "fruta"
+    },
+
+    {
+      "id": 1,
+      "name": "Melancia",
+      "price": 10,
+      "quatidade": "uni",
+      "categorie": "fruta"
+    },
+    {
+      "id": 1,
+      "name": "Uva",
+      "price": 3.5,
+      "quatidade": "Kg",
+      "categorie": "fruta"
+    }
+  ]
+}
