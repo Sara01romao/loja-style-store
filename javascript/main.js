@@ -14,4 +14,3 @@ openCart.addEventListener('click',()=>{
 })
 
 
-console.log(closeCard)
