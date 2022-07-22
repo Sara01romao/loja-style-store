@@ -133,14 +133,36 @@ header nav ul a:hover{
 
 
 /*********Slider banner**********************/
+h1{
+    color: red;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.5rem;
+}
+
+.swiper.mySwiper{
+z-index: -1 ;
+}
+
 .slider-container{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 2fr 3fr;
     border: 1px solid red;
     
 }
 
 .info-banner{
-    border: 1px soldid
-     red;
+    border: 1px solid red;
+    background: rgba(255, 122, 0, 0.72);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner-img img{
+    width: 100%;
+
 }
