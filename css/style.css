@@ -144,7 +144,7 @@ h1{
 z-index: -1 ;
 }
 
-.slider-container{
+.banner-container{
     display: grid;
     grid-template-columns: 2fr 3fr;
     border: 1px solid red;
