@@ -1,16 +1,23 @@
-const closeCart = document.querySelector('.close-cart');
-const openCart = document.querySelector('.open-Cart');
-const cartMenu = document.querySelector('.cartMenu');
 
-closeCart.addEventListener('click', ()=>{
-   
-    cartMenu.classList.remove('open');
 
-})
+const listProducts = document.querySelector('.list-products');
 
-openCart.addEventListener('click',()=>{
-    
-    cartMenu.classList.add('open');
-})
+
+
+ async function api(){
+     const response = await fetch('https://fakestoreapi.com/products');
+     const data = await response.json();
+
+     if(data){
+         
+       /*  listProducts.innerHTML = `<li>${data.map(item => item.title).join('')}</li>` */
+         
+     }
+     console.log(data);
+ }
+
+
+ api()
+
 
 
