@@ -15,7 +15,15 @@ const {products} = await import (`./list_products.js`);
      const data = await response.json();
 
      if(data){
-          /* listProducts.innerHTML = `<li>${products.map(item => item.title).join('')}</li>`  */
+          listProducts.innerHTML = `${data.map((item) => {
+            return(`
+              <div class="card-product">
+                <h4>${item.title}</h4>
+                <img src=${item.image} alt=${item.title}>
+              </div>
+            `)
+
+          }).join('')}` 
      
          
      }
