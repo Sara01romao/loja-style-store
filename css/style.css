@@ -5,11 +5,39 @@
 }
 
 
+header{
+    border: 1px solid red;
+    padding: 10px;
+}
+
+header nav{
+    max-width: 1200px;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+
+}
+
+
+
 .list-products {
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
 }
 
+
 .card-product img{
     width: 150px;
+}
+
+
+.card-product button{
+    display: flex;
+    align-items: center;
+}
+
+.card-product button img{
+    width: 15px;
 }
