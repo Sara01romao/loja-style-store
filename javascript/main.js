@@ -18,8 +18,10 @@ const {products} = await import (`./list_products.js`);
           listProducts.innerHTML = `${data.map((item) => {
             return(`
               <div class="card-product">
-                <h4>${item.title}</h4>
                 <img src=${item.image} alt=${item.title}>
+                <h4>${item.title}</h4>
+                <p>$ ${item.price.toFixed(2)}</p>
+                <button type="button">Add <img src="./img/cart-icon.svg"></button>
               </div>
             `)
 
