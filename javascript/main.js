@@ -1,6 +1,7 @@
 
 
 const listProducts = document.querySelector('.list-products');
+const category = document.querySelector('.category')
 
 const {products} = await import (`./list_products.js`);
 
@@ -15,6 +16,10 @@ const {products} = await import (`./list_products.js`);
      const data = await response.json();
 
      if(data){
+    
+        
+
+
           listProducts.innerHTML = `${data.map((item) => {
             return(`
               <div class="card-product">
