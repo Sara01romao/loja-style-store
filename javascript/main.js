@@ -22,6 +22,7 @@ const {products} = await import (`./list_products.js`);
                   <img src=${item.image} alt=${item.title}>
                 </div>
                 <h4>${item.title}</h4>
+                 ${item.rating.rate}
                 <p>$ ${item.price.toFixed(2)}</p>
                 <button type="button"><img src="./img/cart-icon.svg">Add </button>
               </div>
