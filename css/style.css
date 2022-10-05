@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+ul{
+  list-style: none;
+}
+
 header {
   border: 1px solid red;
   padding: 10px;
@@ -20,6 +24,10 @@ header nav {
   align-items: center;
   justify-content: space-between;
   padding: 0px 50px;
+}
+
+.category{
+  display: flex;
 }
 
 .list-products {
