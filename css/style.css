@@ -37,6 +37,7 @@ header nav {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 50px;
+  
 }
 
 .card-product {
@@ -93,4 +94,25 @@ header nav {
 
 .card-product button img {
   width: 15px;
+}
+
+.loading{
+  border: 1px solid red;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.loading img{
+  animation: animeLoding 1.5s infinite linear;
+}
+
+@keyframes animeLoding {
+  to{
+    transform: rotate(1turn);
+  }
+  
 }
