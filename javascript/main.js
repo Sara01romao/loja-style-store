@@ -1,7 +1,8 @@
 
 
 const listProducts = document.querySelector('.list-products');
-const category = document.querySelector('.category')
+const category = document.querySelector('.category');
+const loading = document.querySelector('.loading');
 
 const {products} = await import (`./list_products.js`);
 
@@ -13,12 +14,12 @@ const {products} = await import (`./list_products.js`);
 
  async function api(){
 
-     document.querySelector('.loading').innerHTML =`<div class=""><img src="./img/loading-icon.svg"></div>`
+     loading.innerHTML =`<div class=""><img src="./img/loading-icon.svg"></div>`
      const response = await fetch('https://fakestoreapi.com/products');
      const data = await response.json();
       
      if(data){
-         /* 
+          loading.style.display="none";
           listProducts.innerHTML = `${data.map((item) => {
             return(`
               <div class="card-product">
@@ -31,7 +32,7 @@ const {products} = await import (`./list_products.js`);
               </div>
             `)
 
-          }).join('')}`  */
+          }).join('')}` 
      
          
      }
