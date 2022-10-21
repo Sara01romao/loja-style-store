@@ -39,8 +39,8 @@ const {products} = await import (`./list_products.js`);
      console.log(data);
  }
 
-
+/* 
  api()
-
+ */
 
 

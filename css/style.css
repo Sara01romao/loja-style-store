@@ -37,7 +37,7 @@ header nav ul{
   gap: 20px;
 }
 
-header nav ul li:first-child a{
+header nav ul li:first-child {
   display: flex;
   align-items: center;
   gap: 8px;
