@@ -160,3 +160,33 @@ header nav ul li:first-child {
   }
   
 }
+
+
+
+
+
+.detalhe{
+  position: relative;
+  background-color: #75e8a4;
+  height: 400px;
+}
+
+.custom-shape-divider-top-1666483156 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1666483156 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 83px;
+}
+
+.custom-shape-divider-top-1666483156 .shape-fill {
+  fill: #FFFFFF;
+}
