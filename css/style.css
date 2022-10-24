@@ -18,7 +18,7 @@ a{
 
 header {
   padding: 10px;
-  box-shadow: 3px 3px 10px 3px #dddddd;
+  box-shadow: -3px -3px 12px 3px #dddddd63;
 }
 
 header nav {
@@ -51,8 +51,15 @@ header nav ul li:first-child {
   padding: 10px 0px;
   border-radius: 8px;
   width: 120px;
+  box-shadow: -3px -3px 12px 3px #dddddd63;
  
+  
 }
+
+.dropdown-active:hover + .dropdown-menu{
+  border: 1px solid red;
+}
+
 
 .dropdown-menu ul{
   display: flex;
