@@ -27,6 +27,15 @@ a{
   margin: 0 auto;
 }
 
+.button{
+  width: 150px;
+  height: 35px;
+  font-weight: bold;
+  border: none;
+  border-radius:5px;
+  
+}
+
 header {
   padding: 10px;
   box-shadow: -3px -3px 12px 3px #dddddd63;
@@ -157,7 +166,7 @@ header nav ul{
 
 .home-container{
   margin-top: 50px;
-  height: 300px;
+  height: 400px;
   background: linear-gradient(254.38deg, #72E3A0 35.59%, rgba(127, 243, 174, 0.36) 83.36%, rgba(114, 213, 154, 0.8) 103.92%), #FFFFFF;
   border-radius: 10px;
 
@@ -172,11 +181,41 @@ header nav ul{
 .home-container h1{
   font-family: 'Poppins';
   font-weight: 500;
+  font-size: 3rem;
+  
 }
 
 .home-container img{
-  width: 300px;
+  width: 350px;
   align-self: flex-end;
 }
+
+
+.home-txt{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.home-txt p{
+  max-width: 400px;
+  font-size: 1.2rem;
+}
+
+
+.home-txt button{
+    background: #000;
+    color: #FFFFFF;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+
+}
+
+.home-txt button:hover{
+  background-color: rgb(43, 43, 43);
+  font-size: 1.05rem;
+}
+
 
 
