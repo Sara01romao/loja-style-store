@@ -193,6 +193,19 @@ header nav ul{
   
 }
 
+@media screen and (max-width:768px) {
+  .home-container img{
+    width: 250px;
+    
+  }
+
+  .home-container h1{
+    font-size: 2rem;
+  }
+  
+  
+}
+
 
 .home-txt{
   display: flex;
