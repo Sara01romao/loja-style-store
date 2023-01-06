@@ -257,17 +257,35 @@ header nav ul{
 @media screen and (max-width:425px) {
   .home-container{
     flex-direction: column-reverse;
+    padding: 20px;
+    justify-content: initial;
+    gap: 50px;
+  }
+
+  .home-container img{
+    max-width: 200px;
+  }
+
+  .home-txt{
+    gap: 10px;
   }
 
   .home-container h1{
     font-size: 1.5rem;
+    
   }
 
   .home-txt p{
-    display: none;
+    font-size: 14px;
+    text-align: center;
   }
 
   .home-txt button{
+    margin: 0 auto;
+  }
+
+  .home-container img{
+    max-width: 150px;
     margin: 0 auto;
   }
   
