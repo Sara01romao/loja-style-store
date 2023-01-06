@@ -163,6 +163,9 @@ header nav ul{
 }
 
 
+.home{
+  padding: 0px 20px;
+}
 
 .home-container{
   margin-top: 50px;
@@ -173,7 +176,7 @@ header nav ul{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 70px;
+  padding: 20px 70px;
   
   animation: fadeUp 1s ease-in-out forwards;
   
@@ -251,3 +254,21 @@ header nav ul{
 }
 
 
+@media screen and (max-width:425px) {
+  .home-container{
+    flex-direction: column-reverse;
+  }
+
+  .home-container h1{
+    font-size: 1.5rem;
+  }
+
+  .home-txt p{
+    display: none;
+  }
+
+  .home-txt button{
+    margin: 0 auto;
+  }
+  
+}
