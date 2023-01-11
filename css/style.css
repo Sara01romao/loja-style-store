@@ -185,7 +185,7 @@ header nav ul{
 }
 
 .home-container h1{
-  font-family: 'Poppins';
+  font-family: 'Kalam', cursive;
   font-weight: 500;
   font-size: 3rem;
   
@@ -218,7 +218,7 @@ header nav ul{
 }
 
 .home-txt p{
-  max-width: 400px;
+  max-width: 450px;
   font-size: 1.2rem;
 }
 
@@ -268,9 +268,7 @@ header nav ul{
     text-align: center;
   }
 
-  .home-txt button{
-    margin: 0 auto;
-  }
+ 
 
   .home-container img{
     max-width: 150px;
