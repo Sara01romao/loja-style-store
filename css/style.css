@@ -84,6 +84,7 @@ header nav ul{
   border-radius: 8px;
   width: 120px;
   box-shadow: -3px -3px 12px 3px #dddddd63;
+  z-index: 9999;
 
 }
 
