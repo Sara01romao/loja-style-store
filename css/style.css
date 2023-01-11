@@ -191,10 +191,25 @@ header nav ul{
   
 }
 
+.home-container h3{
+  font-size: 3rem;
+}
+
 .home-container img{
   width: 350px;
   align-self: flex-end;
   
+}
+
+.home-txt button{
+  height: 35px;
+  max-width: 150px;
+  border: none;
+  background: #000;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 @media screen and (max-width:768px) {
