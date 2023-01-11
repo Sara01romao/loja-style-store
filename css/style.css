@@ -223,19 +223,6 @@ header nav ul{
 }
 
 
-.home-txt button{
-    background: #000;
-    color: #FFFFFF;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.5s ease-in;
-
-}
-
-.home-txt button:hover{
-  background-color: rgb(43, 43, 43);
-  font-size: 1.05rem;
-}
 
 /*animation*/
 
