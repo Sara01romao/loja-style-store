@@ -196,7 +196,8 @@ header nav ul{
 }
 
 .home-container img{
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
   align-self: flex-end;
   
 }
@@ -212,18 +213,7 @@ header nav ul{
   border-radius: 5px;
 }
 
-@media screen and (max-width:768px) {
-  .home-container img{
-    width: 250px;
-    
-  }
 
-  .home-container h1{
-    font-size: 2rem;
-  }
-  
-  
-}
 
 
 .home-txt{
@@ -237,6 +227,37 @@ header nav ul{
   font-size: 1.2rem;
 }
 
+
+@media screen and (max-width:768px) {
+  .home-container{
+    flex-direction: column-reverse;
+    margin-top: 150px;
+  }
+
+  .home-container img{
+    margin: 0 auto;
+  }
+  
+  .home-txt{
+    gap: 5px;
+  }
+
+  .home-container h1{
+    font-size: 2rem;
+  }
+  
+  
+}
+
+@media screen and (max-width:425px) {
+  .home-container{
+    padding: 20px 20px;
+  }
+
+  .home-container img{
+   
+  }
+}
 
 
 /*animation*/
@@ -257,37 +278,3 @@ header nav ul{
 }
 
 
-@media screen and (max-width:425px) {
-  .home-container{
-    flex-direction: column-reverse;
-    padding: 20px;
-    justify-content: initial;
-    gap: 50px;
-  }
-
-  .home-container img{
-    max-width: 200px;
-  }
-
-  .home-txt{
-    gap: 10px;
-  }
-
-  .home-container h1{
-    font-size: 1.5rem;
-    
-  }
-
-  .home-txt p{
-    font-size: 14px;
-    text-align: center;
-  }
-
- 
-
-  .home-container img{
-    max-width: 150px;
-    margin: 0 auto;
-  }
-  
-}
