@@ -202,7 +202,7 @@ header nav ul{
   
 }
 
-.home-txt button{
+.home-txt a{
   height: 35px;
   max-width: 150px;
   border: none;
@@ -211,8 +211,17 @@ header nav ul{
   font-size: 1rem;
   font-weight: bold;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s ease-in;
 }
 
+
+.home-txt a:hover{
+  background: rgb(37, 37, 37);
+}
 
 
 
@@ -254,9 +263,7 @@ header nav ul{
     padding: 20px 20px;
   }
 
-  .home-container img{
-   
-  }
+ 
 }
 
 
