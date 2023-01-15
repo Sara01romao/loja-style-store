@@ -25,6 +25,7 @@ a{
 .container{
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0px 20px;
 }
 
 .button{
@@ -170,6 +171,7 @@ header nav ul{
 
 .home-container{
   margin-top: 50px;
+  margin-bottom: 80px;
   height: 400px;
   background: linear-gradient(254.38deg, #72E3A0 35.59%, rgba(127, 243, 174, 0.36) 83.36%, rgba(114, 213, 154, 0.8) 103.92%), #FFFFFF;
   border-radius: 10px;
@@ -265,6 +267,33 @@ header nav ul{
 
  
 }
+
+
+/*categories*/
+
+
+
+.products-container h2{
+  font-size: 1.3rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.products-container h2::after{
+  content: '';
+  width: 10%;
+  height: 2.5px;
+  background-color: rgb(179, 179, 179);
+  background-color:#72E3A0
+}
+
+
+
+
+
+
 
 
 /*animation*/
