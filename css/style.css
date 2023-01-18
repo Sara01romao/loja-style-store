@@ -291,6 +291,15 @@ header nav ul{
 
 
 
+.card img{
+  max-width: 200px;
+  background-color: #72E3A0;
+}
+
+.txt-product{
+  display: flex;
+  justify-content: space-between;
+}
 
 
 
