@@ -290,15 +290,19 @@ header nav ul{
 }
 
 
-
-.card img{
+.products-card {
   max-width: 200px;
+}
+.products-card img{
+  width: 200px;
   background-color: #72E3A0;
 }
 
 .txt-product{
   display: flex;
   justify-content: space-between;
+  border: 1px solid red;
+  
 }
 
 
