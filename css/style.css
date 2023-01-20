@@ -289,30 +289,32 @@ header nav ul{
   background-color:#72E3A0
 }
 
-
-.products-card {
-  max-width: 200px;
-}
-.products-card img{
-  width: 200px;
-  background-color: #72E3A0;
-}
-
-.txt-product{
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid red;
+.products-card{
+  max-width: 250px;
   
 }
 
 
-.products-card a{
-  background: #000;
-  color: #fff;
+.img-product-content{
+  background: #e3e3e3;
+  padding: 20px 0px;
+}
+
+.products-card img{
+  max-width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+.txt-product-content{
+  display: flex;
+  justify-content: space-between;
 }
 
 
-
+.txt-product-price{
+  font-size: 1.5rem;
+}
 
 /*animation*/
 
