@@ -316,6 +316,13 @@ header nav ul{
   font-size: 1.5rem;
 }
 
+
+.range{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 /*animation*/
 
 @keyframes fadeUp {
