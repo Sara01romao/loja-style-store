@@ -290,7 +290,12 @@ header nav ul{
 }
 
 .products-card{
+  display: inline-block;
   max-width: 250px;
+  width: 100%;
+  margin-top: 50px;
+  color: #000;
+  border: 1px solid red;
   
 }
 
@@ -298,6 +303,7 @@ header nav ul{
 .img-product-content{
   background: #e3e3e3;
   padding: 20px 0px;
+  width: 100%;
 }
 
 .products-card img{
@@ -309,11 +315,13 @@ header nav ul{
 .txt-product-content{
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 
 .txt-product-price{
   font-size: 1.5rem;
+  font-weight: 700;
 }
 
 
@@ -321,6 +329,7 @@ header nav ul{
   display: flex;
   align-items: center;
   gap: 5px;
+  height: 20px;
 }
 
 /*animation*/
