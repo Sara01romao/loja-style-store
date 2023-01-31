@@ -72,7 +72,7 @@
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-          <a class="products-card swiper-slide" href="#">
+          <a class="products-card " href="#">
               <div class="img-product-content">
                 <img src="./img/camiseta.png" alt="camiseta">
               </div>
@@ -101,7 +101,7 @@
         </div>
 
         <div class="swiper-slide">
-          <a class="products-card swiper-slide" href="#">
+          <a class="products-card " href="#">
               <div class="img-product-content">
                 <img src="./img/camiseta.png" alt="camiseta">
               </div>
@@ -130,7 +130,7 @@
         </div>
 
         <div class="swiper-slide">
-          <a class="products-card swiper-slide" href="#">
+          <a class="products-card " href="#">
               <div class="img-product-content">
                 <img src="./img/camiseta.png" alt="camiseta">
               </div>
@@ -159,7 +159,7 @@
         </div>
 
         <div class="swiper-slide">
-          <a class="products-card swiper-slide" href="#">
+          <a class="products-card " href="#">
               <div class="img-product-content">
                 <img src="./img/camiseta.png" alt="camiseta">
               </div>
@@ -190,7 +190,7 @@
         </div>
 
         <div class="swiper-slide">
-          <a class="products-card swiper-slide" href="#">
+          <a class="products-card " href="#">
               <div class="img-product-content">
                 <img src="./img/camiseta.png" alt="camiseta">
               </div>
@@ -219,7 +219,7 @@
         </div>
 
         <div class="swiper-slide">
-          <a class="products-card swiper-slide" href="#">
+          <a class="products-card " href="#">
               <div class="img-product-content">
                 <img src="./img/camiseta.png" alt="camiseta">
               </div>
@@ -271,8 +271,22 @@
     
       const swiper = new Swiper('.swiper', {
       
-      slidesPerView: 4,
-      spaceBetween: 30,
+     
+     
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
       
 
       
