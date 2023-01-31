@@ -340,6 +340,14 @@ header nav ul{
   height: 20px;
 }
 
+
+/*swipper*/
+.swiper-slide{
+  width: 364px;
+  display: flex;
+  justify-content: center;
+}
+
 /*animation*/
 
 @keyframes fadeUp {
