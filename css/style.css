@@ -341,12 +341,8 @@ header nav ul{
 }
 
 
-/*swipper*/
-.swiper-slide{
-  width: 364px;
-  display: flex;
-  justify-content: center;
-}
+
+
 
 /*animation*/
 
