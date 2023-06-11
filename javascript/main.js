@@ -8,18 +8,21 @@ const {products} = await import (`./list_products.js`);
 
 
 
-  /*  listProducts.innerHTML = `<li>${products.map(item => item.title).join('')}</li>` */
+  // listProducts.innerHTML = `<li>${products.map(item => item.title).join('')}</li>` 
 
 
 
  async function api(){
 
-     loading.innerHTML =`<div class=""><img src="./img/loading-icon.svg"></div>`
-     const response = await fetch('https://fakestoreapi.com/products');
+    //  loading.innerHTML =`<div class=""><img src="./img/loading-icon.svg"></div>`
+
+     const response = await fetch(`https://fakestoreapi.com/products/category/men's clothing`);
      const data = await response.json();
+
+
       
      if(data){
-          loading.style.display="none";
+         // loading.style.display="none";
           listProducts.innerHTML = `${data.map((item) => {
             return(`
               <a class="card-product" href="./produto/${item.id}">
@@ -35,12 +38,13 @@ const {products} = await import (`./list_products.js`);
           }).join('')}` 
      
          
-     }
+      }
      console.log(data);
  }
 
-/* 
+
  api()
- */
+ 
 
 
+ //https://fakestoreapi.com/products/category/men'sclothing
