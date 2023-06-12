@@ -43,7 +43,34 @@ const {products} = await import (`./list_products.js`);
  }
 
 
- api()
+
+
+
+ try {
+  api()
+  console.log('We are exploring error handling with try/catch/finally');
+} catch {
+  console.log(e)
+}finally{
+ 
+ 
+  listProducts.innerHTML = `${products.map((item) => {
+    return(`
+      <a class="card-product" href="./produto/${item.id}">
+        <div>
+          <img src=${item.image} alt=${item.title}>
+        </div>
+        <h4>${item.title}</h4>
+        <p>$ ${item.price.toFixed(2)}</p>
+        <button type="button"><img src="./img/cart-icon.svg">Add </button>
+      </a>
+    `)
+
+  }).join('')}
+  
+  
+  ` 
+}
  
 
 
