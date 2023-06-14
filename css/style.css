@@ -269,76 +269,36 @@ header nav ul{
 }
 
 
-/*categories*/
+/*produtos*/
 
-
-
-.products-container h2{
-  font-size: 1.3rem;
-  font-weight: 500;
-  display: flex;
-  flex-direction: column;
-
-}
-
-.products-container h2::after{
-  content: '';
-  width: 10%;
-  height: 2.5px;
-  background-color: rgb(179, 179, 179);
-  background-color:#72E3A0
-}
-
-.products-card{
-  display: inline-block;
-  
-  width: 100%;
-  margin-top: 50px;
-  color: #000;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  
-
-  
-}
-
-.products-card:hover{
-  box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, #75e8a4 0px 8px 16px -8px;
-}
-
-
-.img-product-content{
-  background: #e3e3e3;
-  padding: 20px 0px;
-  width: 100%;
-}
-
-.products-card img{
-  max-width: 80%;
-  margin: 0 auto;
-  display: block;
-}
-
-.txt-product-content{
+.list-products{
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
-  padding: 0px 10px;
+  gap:30px 30px;
+  flex-wrap: wrap;
+  border: 1px solid red;
+}
+
+.card-product div img{
+  max-width: 200px;
+  height: 200px;
+}
+
+.card-product h4{
+  max-width: 15ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media screen and (max-width:375px) {
+  .list-products{
+    justify-content: center;
+  }
   
 }
 
 
-.txt-product-price{
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-
-.range{
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  height: 20px;
-}
 
 
 
