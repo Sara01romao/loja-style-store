@@ -31,7 +31,7 @@ const {products} = await import (`./list_products.js`);
                 </div>
                 <h4>${item.title}</h4>
                 <p>$ ${item.price.toFixed(2)}</p>
-                <button type="button"><img src="./img/cart-icon.svg">Add </button>
+                
               </a>
             `)
 
@@ -41,6 +41,7 @@ const {products} = await import (`./list_products.js`);
       }
      console.log(data);
  }
+
 
 
 
