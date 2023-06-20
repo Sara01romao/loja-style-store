@@ -276,7 +276,8 @@ header nav ul{
   justify-content: space-between;
   gap:30px 30px;
   flex-wrap: wrap;
-  border: 1px solid red;
+  
+  
 }
 
 .card-product div img{
@@ -314,6 +315,10 @@ header nav ul{
   align-items: center;
 }
 
+.loading img{
+  animation: rotation 1s linear infinite;
+}
+
 
 /*animation*/
 
@@ -332,4 +337,16 @@ header nav ul{
   
 }
 
+
+@keyframes rotation {
+   from{
+     transform: rotate(0deg);
+    
+   }
+
+   to{
+     transform: rotate(360deg);
+    
+   }
+}
 

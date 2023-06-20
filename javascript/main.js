@@ -18,8 +18,9 @@ const {products} = await import (`./list_products.js`);
 
       const response = await fetch(`https://fakestoreapi.com/products/category/men's clothing`);
       const data = await response.json();
+      
 
-      //loading.style.display="none";
+      loading.style.display="none";
       listProducts.innerHTML = `${data.map((item) => {
         return(`
           <a class="card-product" href="./produto/${item.id}">
