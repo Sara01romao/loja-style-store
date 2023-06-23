@@ -1,6 +1,7 @@
 
 
-const listProducts = document.querySelector('.list-products');
+const listMens = document.querySelector('.list-products.mens');
+const listWomens = document.querySelector('.list-products.womens');
 const category = document.querySelector('.category');
 const loading = document.querySelector('.loading');
 const {products} = await import (`./list_products.js`);
@@ -16,12 +17,31 @@ const {products} = await import (`./list_products.js`);
 
     try {
 
-      const response = await fetch(`https://fakestoreapi.com/products/category/men's clothing`);
+      const response = await fetch(`https://fakestoreapi.com/products`);
       const data = await response.json();
+      
+      const mensClothing = data.filter(item => item.category == "men's clothing")
+      const womensClothing = data.filter(item => item.category == "women's clothing")
+      
       
 
       loading.style.display="none";
-      listProducts.innerHTML = `${data.map((item) => {
+      listMens.innerHTML = `${mensClothing.map((item) => {
+        return(`
+          <a class="card-product" href="./produto/${item.id}">
+            <div>
+              <img src=${item.image} alt=${item.title}>
+            </div>
+            <h4>${item.title}</h4>
+            <p>$ ${item.price.toFixed(2)}</p>
+            
+          </a>
+        `)
+
+      }).join('')}` 
+
+
+      listWomens.innerHTML = `${womensClothing.map((item) => {
         return(`
           <a class="card-product" href="./produto/${item.id}">
             <div>
