@@ -28,14 +28,16 @@ const {products} = await import (`./list_products.js`);
       loading.style.display="none";
       listMens.innerHTML = `${mensClothing.map((item) => {
         return(`
-          <a class="card-product" href="./produto/${item.id}">
+          <div class="card-product" >
             <div>
               <img src=${item.image} alt=${item.title}>
             </div>
             <h4>${item.title}</h4>
             <p>$ ${item.price.toFixed(2)}</p>
+
+            <a href="./produto/${item.id}">Comprar</a>
             
-          </a>
+          </div>
         `)
 
       }).join('')}` 
@@ -43,14 +45,14 @@ const {products} = await import (`./list_products.js`);
 
       listWomens.innerHTML = `${womensClothing.map((item) => {
         return(`
-          <a class="card-product" href="./produto/${item.id}">
+          <div class="card-product" >
             <div>
               <img src=${item.image} alt=${item.title}>
             </div>
             <h4>${item.title}</h4>
-            <p>$ ${item.price.toFixed(2)}</p>
-            
-          </a>
+            <p>R$ ${item.price.toFixed(2)}</p>
+            <a href="./produto/${item.id}">Comprar</a>
+          </div>
         `)
 
       }).join('')}` 
@@ -70,7 +72,7 @@ const {products} = await import (`./list_products.js`);
               <img src=${item.image} alt=${item.title}>
             </div>
             <h4>${item.title}</h4>
-            <p>$ ${item.price.toFixed(2)}</p>
+            <p>R$ ${item.price.toFixed(2)}</p>
             <button type="button"><img src="./img/cart-icon.svg">Add </button>
           </a>
         `)
