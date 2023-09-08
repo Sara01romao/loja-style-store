@@ -171,12 +171,33 @@ header nav ul{
 /*produtos*/
 
 .list-products{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
+  justify-content: center;
   gap:30px 30px;
-  flex-wrap: wrap;
-  
-  
+
+  margin-bottom: 50px;
+  padding: 30px 20px; 
+}
+
+
+.card-product{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-product a{
+  background: #000;
+  color:#fff;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .card-product div img{
